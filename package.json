@@ -1,34 +1,28 @@
 {
-  "name": "floorplan-ai",
-  "version": "1.0.0",
-  "main": "main.js",
-  "author": "hatuyivi",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hatuyivi/floorplan-ai.git"
-  },
+  "name": "react-vite-tailwind",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "electron .",
-    "build": "electron-builder --mac"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@google/generative-ai": "^0.21.0"
+    "clsx": "2.1.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "tailwind-merge": "3.4.0"
   },
   "devDependencies": {
-    "electron": "^30.0.0",
-    "electron-builder": "^24.13.3"
-  },
-  "build": {
-    "appId": "com.hatuyivi.floorplanai",
-    "productName": "FloorPlanAI",
-    "mac": {
-      "category": "public.app-category.productivity",
-      "target": ["dmg"]
-    },
-    "publish": {
-      "provider": "github",
-      "owner": "hatuyivi",
-      "repo": "floorplan-ai"
-    }
+    "@tailwindcss/vite": "4.1.17",
+    "@types/node": "22.19.17",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "5.1.1",
+    "tailwindcss": "4.1.17",
+    "typescript": "5.9.3",
+    "vite": "7.2.4",
+    "vite-plugin-singlefile": "2.3.0"
   }
 }
