@@ -1,0 +1,8 @@
+cat << 'EOF' > styles.css
+body { margin: 0; display: flex; height: 100vh; font-family: sans-serif; background: #1e1e1e; color: white; }
+.sidebar { width: 260px; background: #252526; padding: 20px; border-right: 1px solid #333; }
+.section { margin-bottom: 20px; }
+input, button { width: 100%; padding: 8px; margin-top: 5px; border-radius: 4px; border: 1px solid #444; background: #333; color: white; }
+button { background: #007aff; cursor: pointer; border: none; font-weight: bold; }
+button:disabled { opacity: 0.5; }
+EOF
