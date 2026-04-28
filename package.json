@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder --mac"
+    "build": "electron-builder --mac --universal"
   },
   "dependencies": {
     "@google/generative-ai": "^0.21.0"
