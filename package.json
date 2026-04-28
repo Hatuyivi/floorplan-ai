@@ -1,0 +1,34 @@
+{
+  "name": "floorplan-ai",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "hatuyivi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hatuyivi/floorplan-ai.git"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --mac"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.hatuyivi.floorplanai",
+    "productName": "FloorPlanAI",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": ["dmg"]
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "hatuyivi",
+      "repo": "floorplan-ai"
+    }
+  }
+}
